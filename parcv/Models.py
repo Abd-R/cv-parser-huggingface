@@ -60,6 +60,8 @@ class Models:
 
 
     def load_pickled_models(self):
+        ner, ner_dates, zero_shot_classifier, tagger, qa_squad = None, None, None, None, None
+
         try:
             ner_dates = self.unpickle_it('ner_dates')
             ner = self.unpickle_it('ner')
