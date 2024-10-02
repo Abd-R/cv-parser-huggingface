@@ -63,7 +63,7 @@ class Models:
         try:
             ner_dates = self.unpickle_it('ner_dates')
             ner = self.unpickle_it('ner')
-            zero_shot_classifier = self.unpickle_it('zero_shot_classifier_6')
+            zero_shot_classifier = self.unpickle_it('zero_shot_classifier')
             tagger = self.unpickle_it("pos_tagger")
             qa_squad = self.unpickle_it('qa_squad')
         except: 
